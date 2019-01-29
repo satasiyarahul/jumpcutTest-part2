@@ -1,0 +1,27 @@
+$(document).ready(function() {
+    $('.hamburger').on('click', function() {
+        $('body').toggleClass('nav-active')
+    })
+
+    $('.has-dropdown').on('click', function() {
+        $('.overlay').toggleClass('active')
+        $(this)
+            .parent()
+            .toggleClass('active')
+    })
+
+    $('.overlay, .courses-dropdown .close').on('click', function() {
+        $('.overlay').removeClass('active')
+        $('.item.active').removeClass('active')
+    })
+
+    $('.courses-dropdown').on('click', function(e) {
+        e.stopPropagation()
+    })
+
+    $('#get-course-started').on('click', function(e) {
+        $('html,body').animate({ 
+            scrollTop: $(".home-courses").offset().top 
+        }, 'slow');
+    })
+})

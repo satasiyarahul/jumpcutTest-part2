@@ -1,0 +1,52 @@
+$(document).ready(function() {
+    $('#stories-next').on('click', function() {
+        $('#home-stories').slick('slickNext')
+    })
+
+    $('#stories-previous').on('click', function() {
+        $('#home-stories').slick('slickPrev')
+    })
+
+    $('.home-stories').on('wheel', (function(e) {
+        if (e.originalEvent.deltaX > 10){
+            $(this).slick('slickNext');
+        } else if(e.originalEvent.deltaX < -10){
+            $(this).slick('slickPrev');
+        } 
+        if (e.originalEvent.deltaY != 0){
+            //Anything that makes vertical wheelscroll keeps normal
+        } else {
+            e.preventDefault();
+        }
+    }));
+
+    $('.home-stories').slick({
+        dots: false,
+        arrows: false,
+        speed: 300,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: false,
+        //centerMode: true,
+        //infinite: true,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 959,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    //centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            }
+        ],
+    })
+})

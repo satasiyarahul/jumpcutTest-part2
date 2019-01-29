@@ -1,0 +1,129 @@
+function count(el, finish, length, time, finalText) {
+    $({ countNum: el.text() }).animate(
+        {
+            countNum: finish,
+        },
+
+        {
+            duration: time * 1000,
+            easing: 'linear',
+            step: function() {
+                var newNum = Math.floor(this.countNum).toString()
+                var split = newNum.split('')
+
+                while (split.length < length) split.unshift('0')
+                
+                if (!split) {
+                    return;
+                }
+                
+                var spanned = '';
+                
+                for (var x = 0; x < split.length; x++) {
+                    spanned += '<span>' + split[x] + '</span>';
+                }
+
+                el.html(spanned)
+            },
+            complete: function() {
+                var newNum = Math.floor(this.countNum).toString()
+                var split = newNum.split('')
+               
+                var spanned = '';
+                
+                for (var x = 0; x < split.length; x++) {
+                    spanned += '<span>' + split[x] + '</span>';
+                }
+
+                el.html(finalText && finalText.length ? finalText : spanned)
+            },
+        }
+    )
+}
+
+function throttle(fn, threshhold, scope) {
+    threshhold || (threshhold = 250)
+    var last, deferTimer
+    return function() {
+        var context = scope || this
+
+        var now = +new Date(),
+            args = arguments
+        if (last && now < last + threshhold) {
+            // hold on to it
+            clearTimeout(deferTimer)
+            deferTimer = setTimeout(function() {
+                last = now
+                fn.apply(context, args)
+            }, threshhold)
+        } else {
+            last = now
+            fn.apply(context, args)
+        }
+    }
+}
+
+$(document).ready(function() {
+    // Animate top section
+    setTimeout(function() {
+        $('body').addClass('ready')
+    }, 1000)
+
+    // On scroll fades
+    var els = $('.on-scroll')
+
+    // Counters
+    var countDone = false
+    var count1 = $('#student-counter')
+    var count2 = $('#countries-counter')
+    var count3 = $('#lives-counter')
+
+    $(window).on(
+        'scroll',
+        throttle(function() {
+            // Scroll position
+            var pos = $(window).scrollTop() + $(window).height()
+
+            // counter position
+            var count1Pos = count1.offset().top
+
+            // count
+            if (pos > count1Pos && !countDone) {
+                countDone = true
+                count(count1, 15000, 5, 1.5)
+                count(count2, 81, 2, 1)
+                count(count3, 20000, 5, 2, 'Countless')
+            }
+
+            // fade in
+            els.each(function(i) {
+                var el = els.eq(i)
+                var elPos = el.offset().top
+
+                if (pos > elPos) {
+                    el.addClass('active')
+                }
+            })
+        }, 100)
+    )
+
+    $('.rocket').on('click', function() {
+        $('.rocket').css('position', 'fixed')
+        $('.rocket').css('bottom', '100%')
+        $('html, body').animate({ scrollTop: 0 }, 1000)
+
+        setTimeout(function() {
+            $('.rocket').attr('style', '')
+        }, 2000)
+    })
+})
+
+// parallax clouds
+$(window).on('scroll', function() {
+    var pos = $(window).scrollTop()
+    var translate = pos / 2.5
+    var translate2 = pos / 2
+
+    $('.cloud-1').attr('style', 'transform: translateY(${translate}px)')
+    $('.cloud-2').attr('style', 'transform: translateY(${translate2}px)')
+})

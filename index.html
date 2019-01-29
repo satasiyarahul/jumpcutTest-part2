@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>JUMPCUT</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6wxaJP9AGcUscwJQyC-qQU1U89kKwz0s&callback=initMap"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a class="company-logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <a href="#" class="menuToggleMobile">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </a>
+                <div class="navwrap">
+                    <div class="user-section">
+                        <a class="icon" href="#">
+                            <img src="images/icons/notification-icon.svg" alt=""></a>
+                        <a class="icon" href="#">
+                            <img src="images/icons/message-icon.svg" alt=""></a>
+                        <a href="#" class="userprofile">
+                            <span class="profile">
+                                <img src="images/profile.jpg" alt=""></span>
+                            <span class="name">SJ</span>
+                        </a>
+                    </div>
+                    <ul class="top-links">
+                        <li><a href="#">My Courses</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Video Review</a></li>
+                        <li><a href="#">Bootcamp</a></li>
+                        <li><a href="#" class="active">Collaborate</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+			<section class="hero-search">
+				<div class="container">
+					<div class="searchcontent">
+						<h1>Sed augue ipsum egestas</h2>
+						<p>Carabiture nisi, Vivamus consectetuer hendrerit</p>
+						<div class="searchbar">
+							<div class="input-container iconleft"><span class="icon light"><img src="images/icons/loaction.svg" alt=""></span><input type="text"></div>
+							<div class="input-container small iconleft"><span class="icon light"><img src="images/icons/miles.svg" alt=""></span><input type="text"></div>
+							<div class="input-container iconleft iconright"><span class="icon light"><img src="images/icons/heart.svg" alt=""></span><input type="text"><a href="#" class="icon"><img src="images/icons/close.svg" alt=""></a></div>
+							<div class="input-container iconleft iconright"><span class="icon light"><img src="images/icons/bulb.svg" alt=""></span><input type="text"><a href="#" class="icon"><img src="images/icons/close.svg" alt=""></a></div>
+							<button class="button" type="submit">SEARCH</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="map-filters">
+				<div class="container">
+					<div class="search-count fullwidth">
+						<div class="pull-left mobilefull">
+							<h2>16 vloggers near Palau Ujong</h2>
+							<div class="appliedfilters">
+								<span>Palau Ujong, Singapore</span>
+								<span>10 miles radius</span>
+								<span>Vlog</span>
+							</div>
+						</div>
+						<div class="pull-right mobilefull">
+							<a href="#" class="button button-secondary">advance search</a>
+						</div>
+					</div>
+				</div>
+				<div class="container tableatfull">
+					<div class="map">
+						<div id="map"></div>
+					</div>
+				</div>
+			</section>
+			<section class="results">
+				<div class="container">
+					<div class="search-cards fullwidth">
+						<div class="resultcount">
+							Viewing <b>16</b> of <b>40</b> results.
+						</div>
+						<div class="m-offset-5">
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/1.png" alt="Deborah Mcduffee"></div>
+										<div class="Indicator away"></div>
+									</div>
+									<h3 class="uname">Deborah Mcduffee</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/2.png" alt="Demetrius Lippman"></div>
+										<div class="Indicator"></div>
+									</div>
+									<h3 class="uname">Demetrius Lippman</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile blue">
+										<div class="userimage fontcap">MP</div>
+										<div class="Indicator active"></div>
+									</div>
+									<h3 class="uname">Mandie Prophet</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/3.png" alt="Bennett Cogdell"></div>
+										<div class="Indicator active"></div>
+									</div>
+									<h3 class="uname">Bennett Cogdell</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/4.png" alt="Hellen Kaspar"></div>
+										<div class="Indicator active"></div>
+									</div>
+									<h3 class="uname">Hellen Kaspar</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/5.png" alt="Whitney Carreon"></div>
+										<div class="Indicator away"></div>
+									</div>
+									<h3 class="uname">Whitney Carreon</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/6.png" alt="Laci Bady"></div>
+										<div class="Indicator"></div>
+									</div>
+									<h3 class="uname">Laci Bady</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/7.png" alt="Louise Cervantes"></div>
+										<div class="Indicator active"></div>
+									</div>
+									<h3 class="uname">Louise Cervantes</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile green">
+										<div class="userimage fontcap">EF</div>
+										<div class="Indicator away"></div>
+									</div>
+									<h3 class="uname">Elisabeth Ferrigno</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/8.png" alt="Annette Bunkley"></div>
+										<div class="Indicator active"></div>
+									</div>
+									<h3 class="uname">Annette Bunkley</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/9.png" alt="Krystin Ortmann"></div>
+										<div class="Indicator away"></div>
+									</div>
+									<h3 class="uname">Krystin Ortmann</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/10.png" alt="Rachele Martin"></div>
+										<div class="Indicator"></div>
+									</div>
+									<h3 class="uname">Rachele Martin</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/11.png" alt="Cathy Logan"></div>
+										<div class="Indicator active"></div>
+									</div>
+									<h3 class="uname">Cathy Logan</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile">
+										<div class="userimage"><img src="images/users/12.png" alt="Else Withey"></div>
+										<div class="Indicator active"></div>
+									</div>
+									<h3 class="uname">Else Withey</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile blue">
+										<div class="userimage fontcap">LB</div>
+										<div class="Indicator"></div>
+									</div>
+									<h3 class="uname">Latosha Bosse</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="grid-4">
+								<div class="card">
+									<div class="profile green">
+										<div class="userimage fontcap">MN</div>
+										<div class="Indicator active"></div>
+									</div>
+									<h3 class="uname">Maximina Niswonger</h3>
+									<div class="location appliedfilters">
+										<span><img src="images/icons/loaction.svg" alt="">Bishan Singapore</span><span>5 miles away</span>
+									</div>
+									<div class="catagories"><span>Vlog</span><span>Cooking</span><span>Arts</span></div>
+									<div class="action">
+										<a href="#">View Channel</a>
+										<a href="#">Send Meassage <i class="arrow"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pagination pull-right">
+						<a href="javascript:;" class="previous"></a>
+						<a href="javascript:;" class="active">1</a>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;">3</a>
+						<a href="javascript:;" class="next"></a>
+					</div>
+				</div>
+			</section>
+		</main>
+    <footer class="fullwidth">
+        <div class="container">
+            <div class="pull-left copyright">
+                &copy; 2018 Jumpcut
+            </div>
+            <div class="pull-right footerlink">
+                <a href="#">Refund Policy</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Earnings Desclaimer</a>
+                <a href="#">Testimonial Disclosure</a>
+                <a href="#">Affiliate Disciosure</a>
+            </div>
+        </div>
+    </footer>
+    <!-- map script -->
+    <script>
+        $(window).bind("load", function (event) {
+            initMap();
+        });
+        function initMap() {
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 5, 
+                center: { lat: -37.474482, lng: 149.514133 },
+                zoomControl: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                streetViewControl: false,
+                rotateControl: false,
+                fullscreenControl: false,
+                styles: [
+        {
+            "elementType": "geometry",
+            "stylers": [
+		      {
+		          "color": "#f5f5f5"
+		      }
+            ]
+        },
+        {
+            "elementType": "labels.icon",
+            "stylers": [
+		      {
+		          "visibility": "off"
+		      }
+            ]
+        },
+        {
+            "elementType": "labels.text.fill",
+            "stylers": [
+		      {
+		          "color": "#616161"
+		      }
+            ]
+        },
+        {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+		      {
+		          "color": "#f5f5f5"
+		      }
+            ]
+        },
+        {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+		      {
+		          "color": "#bdbdbd"
+		      }
+            ]
+        },
+        {
+            "featureType": "landscape.natural.landcover",
+            "elementType": "geometry.stroke",
+            "stylers": [
+		      {
+		          "color": "#d0e6fd"
+		      }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+		      {
+		          "color": "#eeeeee"
+		      }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+		      {
+		          "color": "#757575"
+		      }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+		      {
+		          "color": "#e5e5e5"
+		      }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+		      {
+		          "color": "#9e9e9e"
+		      }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+		      {
+		          "color": "#ffffff"
+		      }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+		      {
+		          "color": "#757575"
+		      }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+		      {
+		          "color": "#dadada"
+		      }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [
+		      {
+		          "color": "#e1f1ff"
+		      }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [
+		      {
+		          "color": "#bfe0ff"
+		      }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+		      {
+		          "color": "#616161"
+		      }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+		      {
+		          "color": "#9e9e9e"
+		      }
+            ]
+        },
+        {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+		      {
+		          "color": "#e5e5e5"
+		      }
+            ]
+        },
+        {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [
+		      {
+		          "color": "#eeeeee"
+		      }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+		      {
+		          "color": "#c9c9c9"
+		      }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "geometry.fill",
+            "stylers": [
+		      {
+		          "color": "#d0e6fd"
+		      }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+		      {
+		          "color": "#9e9e9e"
+		      }
+            ]
+        }
+                ]
+            });
+
+            // Create an array of alphabetical characters used to label the markers.
+            var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+            // Add some markers to the map.
+            // Note: The code uses the JavaScript Array.prototype.map() method to
+            // create an array of markers based on a given "locations" array.
+            // The map() method here has nothing to do with the Google Maps API.
+            var markers = locations.map(function (location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    icon: {
+                        url: "images/markers/marker.svg",
+                        scaledSize: new google.maps.Size(40, 47)
+                    }
+                });
+            });
+            var clusterStyles = [
+			  {
+			      textColor: 'white',
+			      url: 'images/markers/markers1.svg',
+			      height: 40,
+			      width: 40
+			  },
+			 {
+			     textColor: 'white',
+			     url: 'images/markers/markers2.svg',
+			     height: 40,
+			     width: 40
+			 },
+			 {
+			     textColor: 'white',
+			     url: 'images/markers/markers2.svg',
+			     height: 40,
+			     width: 40
+			 }
+            ];
+            var mcOptions = {
+                gridSize: 40,
+                styles: clusterStyles,
+                maxZoom: 15
+            };
+            var markerclusterer = new MarkerClusterer(map, markers, mcOptions);
+
+        }
+        var locations = [
+          { lat: -31.563910, lng: 147.154312 },
+          { lat: -33.718234, lng: 150.363181 },
+          { lat: -33.727111, lng: 150.371124 },
+          { lat: -33.848588, lng: 151.209834 },
+          { lat: -33.851702, lng: 151.216968 },
+          { lat: -34.671264, lng: 150.863657 },
+          { lat: -35.304724, lng: 148.662905 },
+          { lat: -36.817685, lng: 175.699196 },
+          { lat: -36.828611, lng: 175.790222 },
+          { lat: -37.750000, lng: 145.116667 },
+          { lat: -37.759859, lng: 145.128708 },
+          { lat: -37.765015, lng: 145.133858 },
+          { lat: -37.770104, lng: 145.143299 },
+          { lat: -37.773700, lng: 145.145187 },
+          { lat: -37.774785, lng: 145.137978 },
+          { lat: -37.819616, lng: 144.968119 },
+          { lat: -38.330766, lng: 144.695692 },
+          { lat: -39.927193, lng: 175.053218 },
+          { lat: -41.330162, lng: 174.865694 },
+          { lat: -42.734358, lng: 147.439506 },
+          { lat: -42.734358, lng: 147.501315 },
+          { lat: -42.735258, lng: 147.438000 },
+          { lat: -43.999792, lng: 170.463352 }
+        ]
+
+        // navigation css
+    
+        $(document).on('click', '.menuToggleMobile', function (event) {
+            event.preventDefault();
+            $(".navwrap, .menuToggleMobile").toggleClass('nav-open');
+            $("body").toggleClass('nav-expand');
+        });
+
+        // pagination
+
+        $(document).on('click', '.pagination a', function(event) {
+        	if (!$(this).hasClass("previous") && !$(this).hasClass("next")) {
+        		$(".pagination a").removeClass('active');
+        		$(this).addClass('active');
+        		var LeftOff = $(this).offset().left;
+        		console.log(LeftOff);
+        	}
+        });
+    </script>
+</body>
+</html>

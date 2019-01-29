@@ -1,0 +1,212 @@
+/*#1 Reset css*/
+/*#2 Header css*/
+
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600,700');
+
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body {line-height:1;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { display:block;}
+nav ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';content:none;}
+
+a {margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration: none;color:inherit;}
+
+/* change border colour to suit your needs */
+hr {display:block;height:1px;border:0;   border-top:1px solid #cccccc;margin:1em 0;padding:0;}
+
+a,button{cursor: pointer;}
+a,button,input, select {vertical-align:middle;display: inline-block;}
+a:focus,button:focus,input:focus,select:focus{outline: none;}
+*{box-sizing: border-box;}
+body, html{font-size: 100%;background: #F6F6F6;font-family: 'Hind', sans-serif;}
+.container{width:72.5rem;margin: 0 auto;max-width:100%;clear: both;padding-right:1rem;padding-left: 1rem;}
+.container:before,.container:after{content: "";display: table;clear: both;}
+section{width: 100%;float: left;}
+h1,h2,h3,h4,h5{font-weight: 700;}
+.icon,.icon img{width: 1.25rem;height: 1.25rem;display: inline-block;vertical-align: middle;padding: 0.05rem}
+.icon img{width: 1.1rem;height: 1.1rem;display: inline-block;vertical-align: middle;}
+.m-offset-5{margin-left: -0.5rem;margin-right: -0.5rem;}
+.pull-left{float: left;}
+.pull-right{float: right;}
+.fullwidth{width: 100%;float: left;}
+
+
+/*#2 Header css start*/
+ 
+header{background: #171717;padding:1.5em 0;color: #fff;width: 100%;float: left; position: -webkit-sticky; /* Safari */position: sticky;top: 0;}
+.company-logo,.top-links{float: left;}
+.company-logo{padding-right:1.2em;}
+.company-logo img,.company-logo a{height:1.4em;float: left;}
+.top-links{float: left;}
+.top-links ,.top-links li,.top-links li a{float: left;display: block;}
+.top-links li a {text-transform: uppercase;display: inline-block;padding: 0.6em 1.4em 0.4em;line-height: 0.8em;font-size: 0.85em;letter-spacing: 0.07em;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.top-links li a:hover,.top-links li a.active{color: #63E6C2;}
+.user-section{float: right;margin: -0.5rem 0;}
+.user-section a{margin:0 0.8rem;}
+.user-section a:last-child{margin-right: 0;}
+.user-section .icon{width: 1.6rem;height: 1.6rem;}
+.user-section .icon img{width: 1.6rem;height: 1.6rem;}
+.user-section  .profile{width: 2.5rem;height: 2.5rem;border-radius:100%;display: inline-block;overflow: hidden;}
+.user-section  .profile img{width: 100%;}
+.userprofile span{vertical-align: middle;}
+.userprofile .name{padding-left: 0.4rem;}
+
+.hero-search{min-height: 570px;background:url("../images/Header-Banner.png");background-size:cover;background-position: center;position: relative;text-align: center;}
+.hero-search:after{content: "";width: 100%;height: 100%;position: absolute;left: 0;top: 0;background:rgba(21,30,41,0.5);}
+.searchcontent{padding: 11.25rem 0;color: #fff;position: relative;z-index:1;width: 100%;float: left;}
+.searchcontent h1{font-size:3.3em;}
+.searchcontent p{margin-top:0.8em;font-size:1.5em;}
+.searchbar{width: 100%;float: left;margin-top: 2.75rem;}
+.input-container{background: #fff;float: left;border-radius:0.25rem;overflow: hidden;padding: 1.25rem;margin-right: 0.32rem;width:calc(24% - 0.32rem);}
+.input-container.small{width:calc(15% - 0.32rem);}
+.input-container input{border:none;height: 1.25rem;padding: 0;padding-left:0.5rem;font-size: 1em;}
+.iconleft.input-container input{border:none;height: 1.25rem;width:calc(100% - 1.25rem);}
+.iconright.iconleft.input-container input{border:none;height: 1.25rem;width:calc(100% - 2.5rem);}
+.searchbar .button{width:13%;}
+
+.button{border:0.125rem #63E6C2 solid;background: #63E6C2;color: #000;text-transform: uppercase;font-weight: 700;font-size:1rem;padding: 1.125rem;border-radius:0.25rem;line-height: 1.25rem;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;box-sizing: border-box;}
+.button:hover{background: #12202D;color: #63E6C2;}
+.button-secondary{background: #12202D;color: #fff;border:0.125rem #12202D solid;}
+.button-secondary:hover{background: none;color: #12202D;}
+.icon.light{opacity: 0.3;}
+
+/*----card css----*/
+.grid-4{width: 25%;float: left;padding-left: 0.5rem;padding-right: 0.5rem;}
+.card {background: #fff;border-radius:0.32rem;box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 3px 0 rgba(0,0,0,.12);width: 100%;padding:0 1.125rem;float: left;text-align: center;margin-bottom: 1rem;border: 0.125rem #fff solid;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;position: relative;padding-bottom:2.5em !important;margin-top: 2.2rem;}
+.card:hover{border-color:#78E4B9;}
+.card .profile {-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;width: 4.75rem;height: 4.75rem;position: relative;display: inline-block;font-weight: bold;margin-top: -2.4rem;border: 0.125rem transparent solid;box-sizing: border-box;border-radius: 100%;}
+.card .profile:after {content: "";background: #fff;position: absolute;z-index: -1;display: block;width: 4.75rem;height: 4.75rem;box-shadow: 0 2px 1px -1px rgba(0,0,0,.1), 0 1px 3px 0 rgba(0,0,0,.12);left: -0.125rem;border-radius: 100%;top: -0.125rem;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+.card:hover .profile{-webkit-transform: scale(1.1);-ms-transform: scale(1.1);-o-transform: scale(1.1);transform: scale(1.1);}
+.card .profile.blue .fontcap{background: #3F4EFD;}
+.card .profile.green .fontcap{background: #14d7b5;}
+.userimage.fontcap{font-size: 1.5em;color: #fff;line-height:4.4rem;}
+.profile .userimage{width: 4.5rem;height: 4.5rem;border-radius:100%;overflow: hidden;border: 0.125rem #fff solid;}
+.profile .userimage img{width: 100%;}
+.profile .Indicator {width: 1rem;height: 1rem;background: #BABABA;display: inline-block;position: absolute;border-radius: 100%;border: 0.15rem #fff solid;right: 0.2em;bottom: 0.2em;}
+.profile .Indicator.active{background: #66CF00;}
+.profile .Indicator.away{background: #E3972D;}
+.card .uname{margin-top: 0.8rem;}
+.card .catagories{margin: 1rem 0 0.75rem;}
+.card .catagories span{line-height:0.9rem;display: inline-block;padding: 0 0.8rem;opacity:0.8;margin:0.25em 0;font-size: 0.9rem;position: relative;}
+.card .catagories span:after{content:"";display: inline-block;position: absolute;right: -0.125rem;color: #14D7B5;width: 0.25rem;height: 0.125rem;background: #14D7B5;top: 0.35rem;}
+.card .catagories span:last-child:after{display: none;}
+.card .catagories span:first-child{padding-left: 0;}
+.card .catagories span:last-child{border-right:none;padding-right: 0;}
+.card .action{position: absolute;bottom: 0;left: 0;width: 100%;border-top:1px #efefef solid;}
+.card .action a{margin: 0;width: 50%;float: left;padding:15px 5px 10px;font-size:0.83em;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;font-weight: 600;}
+.card .action a:hover{background: #63E6C2;}
+
+.card .action a:first-child{border-right:1px #efefef solid;}
+.inverse-button{color: #161F2A;border:1px #161F2A solid;border-radius:0.2rem;padding:0.6rem 0.6rem 0.4rem ;display: inline-block;font-size:0.9rem;line-height:0.9rem;}
+.inverse-button:hover{background:#161F2A;color: #fff;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.card .location{margin-top: 0.4rem;}
+
+.search-count{margin:4rem 0;}
+.search-count h2{font-size: 1.7rem;}
+.appliedfilters{margin-top: 1rem;}
+.appliedfilters span{position: relative;padding:0 1rem;color: #96a3a9;margin-top: 0.5rem;}
+.appliedfilters span:first-child{padding-left: 0;}
+.appliedfilters span:last-child{padding-right: 0;}
+.appliedfilters span:after{position: relative;width:0.3rem;height:0.3rem;content: "";display: inline-block;background: #96a3a9;right:-1.15rem;border-radius: 100%;vertical-align: middle;}
+.appliedfilters span:last-child:after{display: none;}
+.location span{font-size:0.9rem;padding:0 0.7rem;display: inline-block;}
+.location span:after{right: -0.75rem;}
+.location span:last-child{padding-right: 0;}
+.location span img{height:0.7rem;opacity: 0.5;margin-right: 0.3rem;}
+
+.pagination{margin-bottom: 4.8rem;margin-top: 1rem;}
+.pagination span,.pagination a{width: 1.8rem;height: 1.8rem;line-height: 2rem;display: inline-block;border-radius:0.2rem;text-align: center;color: #82878A;margin:0.2rem;background:;}
+.pagination span.activehighlihter,.pagination a.active{background: #08d6b2;color: #fff;}
+.pagination span.activehighlihter{position: absolute;display: none;}
+.pagination a.previous:after,.pagination a.next:after{content:"";display: inline-block;border-top: 0.125rem solid #82878a;border-left: 0.125rem solid #82878a;height: 0.56rem;width: 0.56rem;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);margin-right: 0.28rem;border-radius: 0.1777rem;margin-right: -0.3rem;}
+.pagination a.next:after{-webkit-transform: rotate(135deg);-ms-transform: rotate(135deg);-o-transform: rotate(135deg);transform: rotate(135deg);margin-left: -0.3rem;margin-right: 0;}
+.resultcount{margin-bottom: 1.6rem;font-size: 1.2em;}
+footer{background: #161616;padding: 1.25rem;color:rgba(255,255,255,0.5);font-size:0.8rem;}
+.footerlink a{display: inline-block;border-right: 1px rgba(255,255,255,0.5) solid;padding:0 0.6rem;}
+.footerlink a:last-child{margin-right: 0;border-right: 0;}
+.menuToggleMobile{display: none;}
+#map{height: 24.5rem;width: 100%;float: left;margin-bottom: 4.3rem;}
+
+@media (max-width: 64em) {
+	.top-links li a {padding: 0.6em 0.7em 0.4em;letter-spacing: 0em;}
+	.user-section .icon {margin: 0 0.4rem;}
+	.grid-4{width: 33.33%;}
+	.searchbar .input-container{width: 100%;float: left;margin-bottom: 0.6rem;}
+	.searchbar .input-container:first-child{width: 60%;margin-right: 0.6rem;}
+	.searchbar .input-container.small{width:calc(40% - 0.6rem);margin-right: 0;}
+	.searchbar .button{width: auto;min-width: 8.3rem;}
+	.searchcontent {padding: 6.8rem 0;}
+	.searchbar{width: 27.5rem;margin:2.75rem auto;float: none;max-width: 100%;}
+	.searchbar .input-container.iconright{margin-right: 0;}
+	.copyright,.footerlink{width: 100%;text-align: center;}
+	.footerlink{margin-top: 0.6rem;}
+	.footerlink a{margin-top: 0.6rem;}
+	.container.tableatfull{width: 100%;padding: 0;}
+}
+@media (max-width: 55.62em) {
+	header {background: #171717;padding: 1.5em 0;color: #fff;width: 100%;float: left;position: fixed;top: 0;left: 0;z-index: 9;}
+	main{margin-top: 4.35rem;}
+	.menuToggleMobile {display: block;width: 1.8rem;float: right;}
+	.menuToggleMobile span{width:1.8rem;height: 0.25rem;background: #fff;display: inline-block;float: left;border-radius: 0.25rem;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+	.menuToggleMobile span.second{margin: 0.33rem 0;}
+	.navwrap {float: left;display: block;position: fixed;width:18.75rem;max-width: 25rem;min-width: 17rem;height: calc(100% - 4.36rem);background: #171717;z-index: 999;left: 0;top: 4.36rem;overflow: hidden;width: 0;-webkit-transform: skew(10deg);-ms-transform: skew(10deg);-o-transform: skew(10deg);transform: skew(10deg);-webkit-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;opacity:0;left: -25rem;}
+	.navwrap.nav-open{display: block;-webkit-transform: skew(0deg);-ms-transform: skew(0deg);-o-transform: skew(0deg);transform: skew(0deg);width: 70%;opacity: 1;left: 0;}
+	.nav-open .first{width: 1.4rem;}
+	.nav-open .first{width: 1rem;}
+	.nav-open .third{width: 1.6rem;}
+	.user-section {float: left;width: 100%;margin-bottom: 1em;padding: 1.5rem 1em;background: rgba(0,0,0,0.2);}
+	.user-section a{float:right;}
+	.user-section .icon{margin-top: 0.5rem;}
+	.user-section a.userprofile{float: left;margin-left: 0;}
+	.top-links, .top-links li, .top-links li a{width: 100%;}
+	.top-links li a {padding:1.5em;letter-spacing: 0.05em;font-size: 1em;}
+	.card .action a {min-width: 7.5rem;}
+	.nav-expand{overflow: hidden;}
+	body:after{content: "";left: 0;top: 4.45rem;width: 100%;display: block;position: fixed;height: calc(100% - 4.5rem);background:rgba(0,0,0,0.4);z-index:-1;opacity: 0;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+	.nav-expand:after{z-index:1;opacity: 1;}
+}
+@media (max-width: 52.5em) and (min-width: 42.5em), (max-width: 35em) and (min-width: 27.5em), (max-width: 18.5em){
+	.card .action a{width: 100%;}
+	.card .action a:first-child{border-bottom: 1px #efefef solid;border-right: none;}
+	.card {padding-bottom: 5em !important;}
+}
+@media (max-width: 48em) {
+	.location span{width: 100%;padding-left: 0;padding-right: 0;}
+	.location span:after{display: none;}
+	.container{width: 43rem;}
+	.card .catagories span {padding: 0 0.6rem;margin: 0.15em 0;font-size: 0.85rem;}
+
+}
+@media (max-width: 42.5em) {
+	.grid-4 {width: 50%;}
+	.search-count h2 {font-size: 1.4rem;text-align: center;}
+	.mobilefull{width: 100%;float: left;}
+	.resultcount,.search-count{text-align: center;}
+	.appliedfilters span:after {right: -0.7rem;}
+	.appliedfilters span {padding: 0 0.5rem;font-size: 0.8em;}
+	.search-count .button{margin-top: 1.5rem;}
+	.card{padding: 1.125rem 0.75rem;}
+	.searchcontent h1 {font-size: 2em;}
+	.searchcontent p {font-size: 1.2em;}
+	.location span{width: auto;}
+}
+@media (max-width: 27.5em) {
+	#map{height: 20.6rem;}
+	.searchbar .input-container:first-child,.searchbar .input-container.small{width:100%;margin-right: 0;}
+	.grid-4{width: 100%;}
+	.container{width: 22rem;}
+	.searchcontent h1 {font-size: 1.7em;}
+	.searchcontent p {font-size: 0.95em;}
+}

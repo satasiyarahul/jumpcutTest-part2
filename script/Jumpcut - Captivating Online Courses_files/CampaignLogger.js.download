@@ -1,0 +1,56 @@
+window.CampaignLogger = window.CampaignLogger || (function () {
+  return {
+    // To minimize depedencies/maximize flexibility we accept the apiHost as a parameter, which initializes the script and maintains compatability with our different endpoints across environments.
+    init: function (apiHost) {
+      if (!window.amplitude) throw new Error('Amplitude must be initialized');
+
+      if (apiHost.slice(-1) === '/') {
+        apiHost = apiHost.substring(0, apiHost.length - 1);
+      }
+
+      const params = parseParams(window.location);
+      if (!params['cid']) return;
+      removeQueryParam('cid');
+
+      const httpRequest = new XMLHttpRequest();
+      httpRequest.onreadystatechange = ajaxDone;
+      httpRequest.open('GET', apiHost + '/campaign-logs?cid=' + params['cid'] + '&pathname=' + window.location.pathname);
+      httpRequest.send();
+
+      function ajaxDone () {
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+          if (httpRequest.status === 200) {
+            const data = JSON.parse(httpRequest.responseText);
+            // TODO: Validate response data
+            window.amplitude.logEvent('Advertising Campaign - ' + data.title, {
+              'Advertising Campaign Identifier': data.advertising_campaign_identifier,
+              'Path Name': data.path_name,
+            });
+          }
+        }
+      }
+    },
+  };
+
+  function parseParams (location) {
+    const params = {};
+    location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+      params[key] = value;
+    });
+    return params;
+  }
+
+  function removeQueryParam (paramKey) {
+    const { location, history } = window;
+
+    const target = new RegExp(paramKey + '=([^&]*)&?');
+    const search = location.search.replace(target, '');
+    const path = location.pathname + search;
+
+    if (path.slice(-1) === '?') {
+      path = path.substring(0, path.length - 1);
+    }
+    
+    history.replaceState({}, document.title, path);
+  }
+})();

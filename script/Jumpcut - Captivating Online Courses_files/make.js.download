@@ -1,0 +1,9 @@
+$(document).ready(function() {
+    $('.home-make').paroller({
+        factor: 0.5,
+        factorXs: 0.2,
+        factorSm: 0.3,
+        type: 'background',
+        direction: 'vertical',
+    })
+})

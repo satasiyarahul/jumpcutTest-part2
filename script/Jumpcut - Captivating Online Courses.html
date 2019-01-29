@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://jumpcut.com/ -->
+<html lang="en" class="gr__jumpcut_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" src="./Jumpcut - Captivating Online Courses_files/07aab54604"></script><script src="./Jumpcut - Captivating Online Courses_files/nr-1099.min.js.download"></script><script type="text/javascript" async="" src="./Jumpcut - Captivating Online Courses_files/amplitude-4.2.1-min.gz.js.download"></script><script type="text/javascript" async="" src="./Jumpcut - Captivating Online Courses_files/insight.min.js.download"></script><script src="./Jumpcut - Captivating Online Courses_files/1941349982570823" async=""></script><script async="" src="./Jumpcut - Captivating Online Courses_files/fbevents.js.download"></script><script async="" src="./Jumpcut - Captivating Online Courses_files/analytics.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://d31g465xs692m7.cloudfront.net/static/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://d31g465xs692m7.cloudfront.net/static/img/favicon_04-18-17.png" type="image/png">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-74946907-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+      <meta name="description" content="Jumpcut creates captivating online courses. Online education today is fundamentally broken. Less than 10% of people who start an online course today finish it -- a completion rate that is unacceptable to us.">
+  <link href="./Jumpcut - Captivating Online Courses_files/chartist.min.css" rel="stylesheet" type="text/css">
+  <link href="./Jumpcut - Captivating Online Courses_files/jumpcut-homepage.css" rel="stylesheet">
+  <title>Jumpcut - Captivating Online Courses</title>
+
+  </head>
+  <body data-gr-c-s-loaded="true" cz-shortcut-listen="true" class="ready">
+
+      <header class="header fade-in-down-full on-ready">
+    <div class="width">
+      <a class="logo" href="javascript:void(0);"><img src="./Jumpcut - Captivating Online Courses_files/logo.svg"></a>
+
+      <a class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+
+      <ul class="nav">
+        <li class="item"><a id="reviews-anchor" class="anchor" href="https://jumpcut.com/reviews">Reviews</a></li>
+        <li class="item"><a id="company-anchor" class="anchor" href="https://jumpcut.com/about">Company</a></li>
+        <li class="item right">
+                            <a id="login-anchor" class="anchor" href="https://app.jumpcut.com/login">Login</a>
+                    </li>
+        <li class="item parent courses">
+          <a class="anchor has-dropdown" href="https://jumpcut.com/#">
+            Courses <img class="chevron" src="./Jumpcut - Captivating Online Courses_files/chevron-down.svg">
+          </a>
+
+          <div class="dropdown courses-dropdown">
+            <header>
+              <h2>Courses</h2>
+              <img class="close" src="./Jumpcut - Captivating Online Courses_files/x.svg">
+            </header>
+            <ul>
+              <li>
+                <a id="view-course-va-sidebar" href="https://jumpcut.com/viral-academy">
+                  <span class="icon"> <img src="./Jumpcut - Captivating Online Courses_files/va-icon.svg"> </span>
+                  Viral Academy
+                </a>
+              </li>
+              <li>
+                <a id="view-course-aim-sidebar" href="https://jumpcut.com/automated-income-machine">
+                  <span class="icon"> <img src="./Jumpcut - Captivating Online Courses_files/aim-icon.svg"> </span>
+                  Automated Income Machine
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="home-top">
+    <div class="width">
+      <div class="cta on-ready fade-in-up">
+        <h1>Like Business School, <br class="one">Only 100,000x <br class="two">Better.</h1>
+        <a class="button" id="get-course-started">Get Started</a>
+      </div>
+
+      <img class="cloud-1" src="./Jumpcut - Captivating Online Courses_files/cloud-1.png" style="transform: translateY(${translate}px)">
+      <img class="cloud-2" src="./Jumpcut - Captivating Online Courses_files/cloud-2.png" style="transform: translateY(${translate2}px)">
+      <img class="render" src="./Jumpcut - Captivating Online Courses_files/top-render3.jpg">
+
+      <div class="home-top-bottom on-scroll fade-in-up active">
+        <div class="text">
+          <h2>LEARN FROM UNPARALLELLED EXPERTS</h2>
+          <p>
+            Featuring Y Combinator CEOs, Billion-Dollar Company Founders, &amp; Social Media Influencers with Millions of Fans.
+          </p>
+        </div>
+        <ul>
+          <li>
+            <img class="techcrunch" src="./Jumpcut - Captivating Online Courses_files/techcrunch.png" alt="Techcrunch">
+          </li>
+          <li>
+            <img class="new-york-times" src="./Jumpcut - Captivating Online Courses_files/new-york-times.png" alt="New York Times">
+          </li>
+          <li>
+            <img class="business-insider" src="./Jumpcut - Captivating Online Courses_files/business-insider.png" alt="Business Insider">
+          </li>
+          <li>
+            <img class="abc-news" src="./Jumpcut - Captivating Online Courses_files/abc-news.png" alt="ABC News">
+          </li>
+          <li>
+            <img class="huffpost" src="./Jumpcut - Captivating Online Courses_files/huffpost.png" alt="Huffpost">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-make" style="background-position: center -567px;">
+    <div class="width">
+      <h2 class="on-scroll fade-in-up active">MIND-BLOWING COURSES THAT CHANGE LIVES.</h2>
+
+      <div class="bottom on-scroll fade-in-up active">
+        <h3>THE JUMPCUT MISSION</h3>
+        <p>
+          We help entrepreneurs launch businesses leveraging the latest trends and technology. Like starting a successful YouTube channel with advanced viral marketing strategies. Or building digital products that almost sell themselves. Ready to make the leap?
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-light">
+    <div class="width">
+      <ul class="home-facts on-scroll fade-in-up active">
+        <li>
+          More than <strong id="student-counter"><span>1</span><span>5</span><span>0</span><span>0</span><span>0</span></strong> Students successfully<br>enrolled
+        </li>
+        <li>
+          In over <strong id="countries-counter"><span>8</span><span>1</span></strong> Countries around the<br>world
+        </li>
+        <li>
+          And <strong id="lives-counter">Countless</strong> lives changed through<br>Jumpcut
+        </li>
+      </ul>
+
+      <div class="home-courses on-scroll fade-in-up active">
+        <header>
+          <h2>THE COURSES</h2>
+          <p>
+            Choose your own path in life.
+          </p>
+        </header>
+
+        <div class="courses">
+          <a id="view-course-va" href="https://jumpcut.com/viral-academy" class="home-course va">
+            <span>
+              <img src="./Jumpcut - Captivating Online Courses_files/va-icon.svg">
+              <h3>Viral Academy</h3>
+            </span>
+            <p>
+              Learn how to start a successful YouTube channel from 7 of the world’s biggest influencers.
+            </p>
+            <span class="button full">View Course</span>
+          </a>
+
+          <a id="view-course-aim" href="https://jumpcut.com/automated-income-machine" class="home-course aim">
+            <span>
+              <img src="./Jumpcut - Captivating Online Courses_files/aim-icon.svg">
+              <h3>Automated Income<br>Machine</h3>
+            </span>
+            <p>
+              Package your knowledge into digital products that sell themselves with advanced marketing automation.
+            </p>
+            <span class="button full">View Course</span>
+          </a>
+        </div>
+      </div>
+
+      <header class="stories-header on-scroll fade-in-up active">
+        <div>
+          <h2>Success Stories</h2>
+          <p>Warning: May cause massive motivation.</p>
+        </div>
+
+        <nav>
+          <a id="stories-previous">
+            <img src="./Jumpcut - Captivating Online Courses_files/arrow-left.svg" alt="previous">
+          </a>
+
+          <a id="stories-next">
+            <img src="./Jumpcut - Captivating Online Courses_files/arrow-right.svg" alt="next">
+          </a>
+        </nav>
+      </header>
+    </div>
+    <!-- .width -->
+  </div>
+  <!-- .home-light -->
+
+  <div class="home-dark">
+    <div class="width">
+      <div id="home-stories" class="home-stories slick-initialized slick-slider">
+
+        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 30000px; transform: translate3d(-12px, 0px, 0px);"><div class="home-story lk on-scroll fade-in-right card-Laurie &lt;span class=&quot;helvetica&quot;&gt;&amp;&lt;/span&gt;&lt;br /&gt; Kevin slick-slide slick-current slick-active active" style="background-image: url(/img/jumpcut-homepage/success-students/laurie-kevin.jpg)" data-slick-index="0" aria-hidden="false" tabindex="0">
+  <div class="home-story-inner">
+    <header class="home-story-header">
+      <h3>
+        Laurie <span class="helvetica">&amp;</span><br> Kevin
+      </h3>
+      <h4>The Icing Artist</h4>
+    </header>
+
+    <div class="home-story-bottom">
+      <div class="home-story-read">
+        <p>
+          Baking Cakes For Over 2.5 Million People On YouTube.
+        </p>
+        <!-- <a class="button small">Read Story</a> -->
+      </div>
+
+      <div class="home-story-stats">
+        <div>
+          <h5>
+            Total: 2.8M <span class="display-text youtube"></span>
+          </h5>
+          <p class="gain">90K Monthly <span class="display-text youtube"></span></p>
+          <p class="period">
+          May 2016 <span class="lucida">-</span> Nov 2018
+          </p>
+        </div>
+        <div class="chart-container">
+          <div class="ct-chart ct-golden-section" id="icingArtistData"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-bar" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><line x1="42.4" x2="42.4" y1="70" y2="68.68624" class="ct-bar" ct:value="51612"></line><line x1="47.199999999999996" x2="47.199999999999996" y1="70" y2="68.37915636363637" class="ct-bar" ct:value="63676"></line><line x1="52" x2="52" y1="70" y2="68.34728727272727" class="ct-bar" ct:value="64928"></line><line x1="56.8" x2="56.8" y1="70" y2="68.30111272727272" class="ct-bar" ct:value="66742"></line><line x1="61.6" x2="61.6" y1="70" y2="68.26542545454545" class="ct-bar" ct:value="68144"></line><line x1="66.4" x2="66.4" y1="70" y2="68.23760363636363" class="ct-bar" ct:value="69237"></line><line x1="71.2" x2="71.2" y1="70" y2="68.2139309090909" class="ct-bar" ct:value="70167"></line><line x1="76" x2="76" y1="70" y2="68.18076363636364" class="ct-bar" ct:value="71470"></line><line x1="80.80000000000001" x2="80.80000000000001" y1="70" y2="68.13716" class="ct-bar" ct:value="73183"></line><line x1="85.6" x2="85.6" y1="70" y2="68.0828909090909" class="ct-bar" ct:value="75315"></line><line x1="90.4" x2="90.4" y1="70" y2="68.05262545454545" class="ct-bar" ct:value="76504"></line><line x1="95.2" x2="95.2" y1="70" y2="67.97913818181819" class="ct-bar" ct:value="79391"></line><line x1="100" x2="100" y1="70" y2="67.93321818181818" class="ct-bar" ct:value="81195"></line><line x1="104.80000000000001" x2="104.80000000000001" y1="70" y2="67.76114545454546" class="ct-bar" ct:value="87955"></line><line x1="109.60000000000001" x2="109.60000000000001" y1="70" y2="67.66103272727273" class="ct-bar" ct:value="91888"></line><line x1="114.4" x2="114.4" y1="70" y2="66.96156727272728" class="ct-bar" ct:value="119367"></line><line x1="119.2" x2="119.2" y1="70" y2="65.76634909090909" class="ct-bar" ct:value="166322"></line><line x1="124" x2="124" y1="70" y2="64.76695272727272" class="ct-bar" ct:value="205584"></line><line x1="128.79999999999998" x2="128.79999999999998" y1="70" y2="64.32261818181819" class="ct-bar" ct:value="223040"></line><line x1="133.6" x2="133.6" y1="70" y2="62.78353454545454" class="ct-bar" ct:value="283504"></line><line x1="138.4" x2="138.4" y1="70" y2="62.49012" class="ct-bar" ct:value="295031"></line><line x1="143.20000000000002" x2="143.20000000000002" y1="70" y2="60.60770545454545" class="ct-bar" ct:value="368983"></line><line x1="148" x2="148" y1="70" y2="56.609356363636365" class="ct-bar" ct:value="526061"></line><line x1="152.79999999999998" x2="152.79999999999998" y1="70" y2="54.09243636363637" class="ct-bar" ct:value="624940"></line><line x1="157.6" x2="157.6" y1="70" y2="53.61852363636363" class="ct-bar" ct:value="643558"></line><line x1="162.4" x2="162.4" y1="70" y2="52.96976363636364" class="ct-bar" ct:value="669045"></line><line x1="167.20000000000002" x2="167.20000000000002" y1="70" y2="51.571290909090905" class="ct-bar" ct:value="723985"></line><line x1="172" x2="172" y1="70" y2="50.385949090909094" class="ct-bar" ct:value="770552"></line><line x1="176.8" x2="176.8" y1="70" y2="49.49252" class="ct-bar" ct:value="805651"></line><line x1="181.6" x2="181.6" y1="70" y2="49.02145818181818" class="ct-bar" ct:value="824157"></line><line x1="186.4" x2="186.4" y1="70" y2="48.36524" class="ct-bar" ct:value="849937"></line><line x1="191.2" x2="191.2" y1="70" y2="46.25589818181818" class="ct-bar" ct:value="932804"></line><line x1="196" x2="196" y1="70" y2="44.62278545454545" class="ct-bar" ct:value="996962"></line><line x1="200.8" x2="200.8" y1="70" y2="41.83541090909091" class="ct-bar" ct:value="1106466"></line><line x1="205.6" x2="205.6" y1="70" y2="38.90813818181818" class="ct-bar" ct:value="1221466"></line><line x1="210.4" x2="210.4" y1="70" y2="34.38916727272727" class="ct-bar" ct:value="1398997"></line><line x1="215.2" x2="215.2" y1="70" y2="33.58192727272727" class="ct-bar" ct:value="1430710"></line><line x1="220" x2="220" y1="70" y2="32.889996363636364" class="ct-bar" ct:value="1457893"></line><line x1="224.8" x2="224.8" y1="70" y2="32.04852" class="ct-bar" ct:value="1490951"></line><line x1="229.6" x2="229.6" y1="70" y2="31.37349090909091" class="ct-bar" ct:value="1517470"></line><line x1="234.4" x2="234.4" y1="70" y2="25.038338181818183" class="ct-bar" ct:value="1766351"></line><line x1="239.2" x2="239.2" y1="70" y2="23.843094545454548" class="ct-bar" ct:value="1813307"></line><line x1="244" x2="244" y1="70" y2="22.106941818181816" class="ct-bar" ct:value="1881513"></line><line x1="248.8" x2="248.8" y1="70" y2="19.98494909090909" class="ct-bar" ct:value="1964877"></line><line x1="253.6" x2="253.6" y1="70" y2="18.276745454545456" class="ct-bar" ct:value="2031985"></line><line x1="258.4" x2="258.4" y1="70" y2="16.802825454545456" class="ct-bar" ct:value="2089889"></line><line x1="263.19999999999993" x2="263.19999999999993" y1="70" y2="14.970963636363635" class="ct-bar" ct:value="2161855"></line><line x1="268" x2="268" y1="70" y2="3.741665454545455" class="ct-bar" ct:value="2603006"></line><line x1="272.79999999999995" x2="272.79999999999995" y1="70" y2="1.4909745454545487" class="ct-bar" ct:value="2691426"></line><line x1="277.59999999999997" x2="277.59999999999997" y1="70" y2="1.0502036363636336" class="ct-bar" ct:value="2708742"></line></g></g><g class="ct-labels"></g></svg></div>
+        </div>
+      </div>
+      <ul class="home-story-social socials-3">
+                  <li>
+            <a href="https://www.youtube.com/user/TheIcingArtist" target="blank" tabindex="0">
+              <img src="./Jumpcut - Captivating Online Courses_files/youtube-circle.svg" alt="youtube">
+              2.8M
+            </a>
+          </li>
+                  <li>
+            <a href="https://www.instagram.com/icingartist/" target="blank" tabindex="0">
+              <img src="./Jumpcut - Captivating Online Courses_files/instagram-circle.svg" alt="instagram">
+              174K
+            </a>
+          </li>
+                  <li>
+            <a href="https://www.facebook.com/theicingartist" target="blank" tabindex="0">
+              <img src="./Jumpcut - Captivating Online Courses_files/facebook-circle.svg" alt="facebook">
+              500K
+            </a>
+          </li>
+              </ul>
+    </div>
+    <!-- .home-story-bottom -->
+  </div>
+  <!-- .home-story-inner -->
+</div><div class="home-story lk on-scroll fade-in-right card-MIKEY &lt;span class=&quot;helvetica&quot;&gt;&amp;&lt;/span&gt;&lt;br /&gt; AMIR slick-slide slick-active active" style="background-image: url(/img/jumpcut-homepage/success-students/mikey-ari.jpg)" data-slick-index="1" aria-hidden="false" tabindex="0">
+  <div class="home-story-inner">
+    <header class="home-story-header">
+      <h3>
+        MIKEY <span class="helvetica">&amp;</span><br> AMIR
+      </h3>
+      <h4>Habit Nest</h4>
+    </header>
+
+    <div class="home-story-bottom">
+      <div class="home-story-read">
+        <p>
+          Unlikely Students Turned Habit Hacking Startup Success.
+        </p>
+        <!-- <a class="button small">Read Story</a> -->
+      </div>
+
+      <div class="home-story-stats">
+        <div>
+          <h5>
+            Total: 249K <span class="display-text instagram"></span>
+          </h5>
+          <p class="gain">3K Monthly <span class="display-text instagram"></span></p>
+          <p class="period">
+          Apr 2015 <span class="lucida">-</span> Jan 2018
+          </p>
+        </div>
+        <div class="chart-container">
+          <div class="ct-chart ct-golden-section" id="habitsNestData"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-bar" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><line x1="42.4" x2="42.4" y1="70" y2="68.64592" class="ct-bar" ct:value="4836"></line><line x1="47.199999999999996" x2="47.199999999999996" y1="70" y2="67.83896" class="ct-bar" ct:value="7718"></line><line x1="52" x2="52" y1="70" y2="67.82076" class="ct-bar" ct:value="7783"></line><line x1="56.8" x2="56.8" y1="70" y2="67.6984" class="ct-bar" ct:value="8220"></line><line x1="61.6" x2="61.6" y1="70" y2="67.63848" class="ct-bar" ct:value="8434"></line><line x1="66.4" x2="66.4" y1="70" y2="67.5444" class="ct-bar" ct:value="8770"></line><line x1="71.2" x2="71.2" y1="70" y2="67.50856" class="ct-bar" ct:value="8898"></line><line x1="76" x2="76" y1="70" y2="67.47552" class="ct-bar" ct:value="9016"></line><line x1="80.80000000000001" x2="80.80000000000001" y1="70" y2="67.44444" class="ct-bar" ct:value="9127"></line><line x1="85.6" x2="85.6" y1="70" y2="67.43212" class="ct-bar" ct:value="9171"></line><line x1="90.4" x2="90.4" y1="70" y2="67.20196" class="ct-bar" ct:value="9993"></line><line x1="95.2" x2="95.2" y1="70" y2="67.02332" class="ct-bar" ct:value="10631"></line><line x1="100" x2="100" y1="70" y2="66.9228" class="ct-bar" ct:value="10990"></line><line x1="104.80000000000001" x2="104.80000000000001" y1="70" y2="66.81612" class="ct-bar" ct:value="11371"></line><line x1="109.60000000000001" x2="109.60000000000001" y1="70" y2="66.75396" class="ct-bar" ct:value="11593"></line><line x1="114.4" x2="114.4" y1="70" y2="66.70916" class="ct-bar" ct:value="11753"></line><line x1="119.2" x2="119.2" y1="70" y2="66.66744" class="ct-bar" ct:value="11902"></line><line x1="124" x2="124" y1="70" y2="66.63972" class="ct-bar" ct:value="12001"></line><line x1="128.79999999999998" x2="128.79999999999998" y1="70" y2="66.60136" class="ct-bar" ct:value="12138"></line><line x1="133.6" x2="133.6" y1="70" y2="66.20768" class="ct-bar" ct:value="13544"></line><line x1="138.4" x2="138.4" y1="70" y2="66.06684" class="ct-bar" ct:value="14047"></line><line x1="143.20000000000002" x2="143.20000000000002" y1="70" y2="65.68968" class="ct-bar" ct:value="15394"></line><line x1="148" x2="148" y1="70" y2="64.57612" class="ct-bar" ct:value="19371"></line><line x1="152.79999999999998" x2="152.79999999999998" y1="70" y2="64.47336" class="ct-bar" ct:value="19738"></line><line x1="157.6" x2="157.6" y1="70" y2="63.43456" class="ct-bar" ct:value="23448"></line><line x1="162.4" x2="162.4" y1="70" y2="61.64452" class="ct-bar" ct:value="29841"></line><line x1="167.20000000000002" x2="167.20000000000002" y1="70" y2="60.58864" class="ct-bar" ct:value="33612"></line><line x1="172" x2="172" y1="70" y2="60.46404" class="ct-bar" ct:value="34057"></line><line x1="176.8" x2="176.8" y1="70" y2="57.0052" class="ct-bar" ct:value="46410"></line><line x1="181.6" x2="181.6" y1="70" y2="56.71176" class="ct-bar" ct:value="47458"></line><line x1="186.4" x2="186.4" y1="70" y2="55.62732" class="ct-bar" ct:value="51331"></line><line x1="191.2" x2="191.2" y1="70" y2="53.27224" class="ct-bar" ct:value="59742"></line><line x1="196" x2="196" y1="70" y2="53.212599999999995" class="ct-bar" ct:value="59955"></line><line x1="200.8" x2="200.8" y1="70" y2="52.67864" class="ct-bar" ct:value="61862"></line><line x1="205.6" x2="205.6" y1="70" y2="52.07328" class="ct-bar" ct:value="64024"></line><line x1="210.4" x2="210.4" y1="70" y2="52.00356" class="ct-bar" ct:value="64273"></line><line x1="215.2" x2="215.2" y1="70" y2="46.99492" class="ct-bar" ct:value="82161"></line><line x1="220" x2="220" y1="70" y2="42.352239999999995" class="ct-bar" ct:value="98742"></line><line x1="224.8" x2="224.8" y1="70" y2="42.1008" class="ct-bar" ct:value="99640"></line><line x1="229.6" x2="229.6" y1="70" y2="41.97928" class="ct-bar" ct:value="100074"></line><line x1="234.4" x2="234.4" y1="70" y2="41.883520000000004" class="ct-bar" ct:value="100416"></line><line x1="239.2" x2="239.2" y1="70" y2="36.38516" class="ct-bar" ct:value="120053"></line><line x1="244" x2="244" y1="70" y2="33.53532" class="ct-bar" ct:value="130231"></line><line x1="248.8" x2="248.8" y1="70" y2="30.717959999999998" class="ct-bar" ct:value="140293"></line><line x1="253.6" x2="253.6" y1="70" y2="27.66512" class="ct-bar" ct:value="151196"></line><line x1="258.4" x2="258.4" y1="70" y2="27.56852" class="ct-bar" ct:value="151541"></line><line x1="263.19999999999993" x2="263.19999999999993" y1="70" y2="23.83444" class="ct-bar" ct:value="164877"></line><line x1="268" x2="268" y1="70" y2="20.52876" class="ct-bar" ct:value="176683"></line><line x1="272.79999999999995" x2="272.79999999999995" y1="70" y2="16.8056" class="ct-bar" ct:value="189980"></line><line x1="277.59999999999997" x2="277.59999999999997" y1="70" y2="2.7896400000000057" class="ct-bar" ct:value="240037"></line></g></g><g class="ct-labels"></g></svg></div>
+        </div>
+      </div>
+      <ul class="home-story-social socials-2">
+                  <li>
+            <a href="https://www.instagram.com/habitnest" target="blank" tabindex="0">
+              <img src="./Jumpcut - Captivating Online Courses_files/instagram-circle.svg" alt="instagram">
+              249K
+            </a>
+          </li>
+                  <li>
+            <a href="https://www.facebook.com/habitnest" target="blank" tabindex="0">
+              <img src="./Jumpcut - Captivating Online Courses_files/facebook-circle.svg" alt="facebook">
+              260K
+            </a>
+          </li>
+              </ul>
+    </div>
+    <!-- .home-story-bottom -->
+  </div>
+  <!-- .home-story-inner -->
+</div><div class="home-story lk on-scroll fade-in-right card-HARSHYT &lt;span class=&quot;helvetica&quot;&gt;&amp;&lt;/span&gt;&lt;br /&gt; DAVID slick-slide active" style="background-image: url(/img/jumpcut-homepage/success-students/harshyt-david.jpg)" data-slick-index="2" aria-hidden="true" tabindex="-1">
+  <div class="home-story-inner">
+    <header class="home-story-header">
+      <h3>
+        HARSHYT <span class="helvetica">&amp;</span><br> DAVID
+      </h3>
+      <h4>RiffShop</h4>
+    </header>
+
+    <div class="home-story-bottom">
+      <div class="home-story-read">
+        <p>
+          From Starving Artists to Full-Time YouTube Musicians Making $1,900 Per Video.
+        </p>
+        <!-- <a class="button small">Read Story</a> -->
+      </div>
+
+      <div class="home-story-stats">
+        <div>
+          <h5>
+            Total: 82K <span class="display-text youtube"></span>
+          </h5>
+          <p class="gain">3K Monthly <span class="display-text youtube"></span></p>
+          <p class="period">
+          Dec 2016 <span class="lucida">-</span> Nov 2018
+          </p>
+        </div>
+        <div class="chart-container">
+          <div class="ct-chart ct-golden-section" id="riffShopData"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-bar" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><line x1="42.4" x2="42.4" y1="70" y2="69.77023529411764" class="ct-bar" ct:value="279"></line><line x1="47.199999999999996" x2="47.199999999999996" y1="70" y2="69.72" class="ct-bar" ct:value="340"></line><line x1="52" x2="52" y1="70" y2="69.55282352941177" class="ct-bar" ct:value="543"></line><line x1="56.8" x2="56.8" y1="70" y2="69.10729411764706" class="ct-bar" ct:value="1084"></line><line x1="61.6" x2="61.6" y1="70" y2="68.67988235294118" class="ct-bar" ct:value="1603"></line><line x1="66.4" x2="66.4" y1="70" y2="68.31917647058823" class="ct-bar" ct:value="2041"></line><line x1="71.2" x2="71.2" y1="70" y2="66.32788235294117" class="ct-bar" ct:value="4459"></line><line x1="76" x2="76" y1="70" y2="64.30447058823529" class="ct-bar" ct:value="6916"></line><line x1="80.80000000000001" x2="80.80000000000001" y1="70" y2="63.16470588235294" class="ct-bar" ct:value="8300"></line><line x1="85.6" x2="85.6" y1="70" y2="62.00105882352941" class="ct-bar" ct:value="9713"></line><line x1="90.4" x2="90.4" y1="70" y2="58.74070588235294" class="ct-bar" ct:value="13672"></line><line x1="95.2" x2="95.2" y1="70" y2="58.071176470588235" class="ct-bar" ct:value="14485"></line><line x1="100" x2="100" y1="70" y2="57.359647058823526" class="ct-bar" ct:value="15349"></line><line x1="104.80000000000001" x2="104.80000000000001" y1="70" y2="56.97258823529412" class="ct-bar" ct:value="15819"></line><line x1="109.60000000000001" x2="109.60000000000001" y1="70" y2="56.73294117647059" class="ct-bar" ct:value="16110"></line><line x1="114.4" x2="114.4" y1="70" y2="56.50235294117647" class="ct-bar" ct:value="16390"></line><line x1="119.2" x2="119.2" y1="70" y2="56.308" class="ct-bar" ct:value="16626"></line><line x1="124" x2="124" y1="70" y2="56.23305882352941" class="ct-bar" ct:value="16717"></line><line x1="128.79999999999998" x2="128.79999999999998" y1="70" y2="55.69117647058823" class="ct-bar" ct:value="17375"></line><line x1="133.6" x2="133.6" y1="70" y2="55.17976470588235" class="ct-bar" ct:value="17996"></line><line x1="138.4" x2="138.4" y1="70" y2="55.00517647058824" class="ct-bar" ct:value="18208"></line><line x1="143.20000000000002" x2="143.20000000000002" y1="70" y2="54.43282352941176" class="ct-bar" ct:value="18903"></line><line x1="148" x2="148" y1="70" y2="52.127764705882356" class="ct-bar" ct:value="21702"></line><line x1="152.79999999999998" x2="152.79999999999998" y1="70" y2="50.498823529411766" class="ct-bar" ct:value="23680"></line><line x1="157.6" x2="157.6" y1="70" y2="49.580588235294115" class="ct-bar" ct:value="24795"></line><line x1="162.4" x2="162.4" y1="70" y2="45.74211764705882" class="ct-bar" ct:value="29456"></line><line x1="167.20000000000002" x2="167.20000000000002" y1="70" y2="39.04023529411765" class="ct-bar" ct:value="37594"></line><line x1="172" x2="172" y1="70" y2="38.28588235294117" class="ct-bar" ct:value="38510"></line><line x1="176.8" x2="176.8" y1="70" y2="36.993764705882356" class="ct-bar" ct:value="40079"></line><line x1="181.6" x2="181.6" y1="70" y2="36.245176470588234" class="ct-bar" ct:value="40988"></line><line x1="186.4" x2="186.4" y1="70" y2="35.69423529411765" class="ct-bar" ct:value="41657"></line><line x1="191.2" x2="191.2" y1="70" y2="34.88964705882353" class="ct-bar" ct:value="42634"></line><line x1="196" x2="196" y1="70" y2="34.208588235294116" class="ct-bar" ct:value="43461"></line><line x1="200.8" x2="200.8" y1="70" y2="33.50611764705882" class="ct-bar" ct:value="44314"></line><line x1="205.6" x2="205.6" y1="70" y2="33.10094117647059" class="ct-bar" ct:value="44806"></line><line x1="210.4" x2="210.4" y1="70" y2="31.504117647058827" class="ct-bar" ct:value="46745"></line><line x1="215.2" x2="215.2" y1="70" y2="28.602823529411765" class="ct-bar" ct:value="50268"></line><line x1="220" x2="220" y1="70" y2="27.847647058823526" class="ct-bar" ct:value="51185"></line><line x1="224.8" x2="224.8" y1="70" y2="27.127882352941178" class="ct-bar" ct:value="52059"></line><line x1="229.6" x2="229.6" y1="70" y2="23.874117647058824" class="ct-bar" ct:value="56010"></line><line x1="234.4" x2="234.4" y1="70" y2="22.221294117647062" class="ct-bar" ct:value="58017"></line><line x1="239.2" x2="239.2" y1="70" y2="20.469647058823533" class="ct-bar" ct:value="60144"></line><line x1="244" x2="244" y1="70" y2="18.02376470588235" class="ct-bar" ct:value="63114"></line><line x1="248.8" x2="248.8" y1="70" y2="16.021764705882354" class="ct-bar" ct:value="65545"></line><line x1="253.6" x2="253.6" y1="70" y2="11.911529411764704" class="ct-bar" ct:value="70536"></line><line x1="258.4" x2="258.4" y1="70" y2="8.15623529411765" class="ct-bar" ct:value="75096"></line><line x1="263.19999999999993" x2="263.19999999999993" y1="70" y2="4.411647058823533" class="ct-bar" ct:value="79643"></line><line x1="268" x2="268" y1="70" y2="3.3221176470588176" class="ct-bar" ct:value="80966"></line><line x1="272.79999999999995" x2="272.79999999999995" y1="70" y2="2.778588235294123" class="ct-bar" ct:value="81626"></line><line x1="277.59999999999997" x2="277.59999999999997" y1="70" y2="2.123058823529405" class="ct-bar" ct:value="82422"></line></g></g><g class="ct-labels"></g></svg></div>
+        </div>
+      </div>
+      <ul class="home-story-social socials-2">
+                  <li>
+            <a href="https://www.youtube.com/channel/UCJJnX_k6hmPfuROE_Wb3-cQ" target="blank" tabindex="-1">
+              <img src="./Jumpcut - Captivating Online Courses_files/youtube-circle.svg" alt="youtube">
+              82K
+            </a>
+          </li>
+                  <li>
+            <a href="https://www.facebook.com/RiffShopAcademy" target="blank" tabindex="-1">
+              <img src="./Jumpcut - Captivating Online Courses_files/facebook-circle.svg" alt="facebook">
+              66K
+            </a>
+          </li>
+              </ul>
+    </div>
+    <!-- .home-story-bottom -->
+  </div>
+  <!-- .home-story-inner -->
+</div><div class="home-story lk on-scroll fade-in-right card-Christian slick-slide active" style="background-image: url(/img/jumpcut-homepage/success-students/christian.jpg)" data-slick-index="3" aria-hidden="true" tabindex="-1">
+  <div class="home-story-inner">
+    <header class="home-story-header">
+      <h3>
+        Christian
+      </h3>
+      <h4>FrugalAesthetic</h4>
+    </header>
+
+    <div class="home-story-bottom">
+      <div class="home-story-read">
+        <p>
+          This 20 Year Old YouTuber Makes Over $150,000 Annually With His Hilarious Fashion Reviews.
+        </p>
+        <!-- <a class="button small">Read Story</a> -->
+      </div>
+
+      <div class="home-story-stats">
+        <div>
+          <h5>
+            Total: 510K <span class="display-text youtube"></span>
+          </h5>
+          <p class="gain">18K Monthly <span class="display-text youtube"></span></p>
+          <p class="period">
+          Oct 2016 <span class="lucida">-</span> Nov 2018
+          </p>
+        </div>
+        <div class="chart-container">
+          <div class="ct-chart ct-golden-section" id="frugalData"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-bar" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><line x1="42.4" x2="42.4" y1="70" y2="69.92933333333333" class="ct-bar" ct:value="530"></line><line x1="47.199999999999996" x2="47.199999999999996" y1="70" y2="69.3364" class="ct-bar" ct:value="4977"></line><line x1="52" x2="52" y1="70" y2="69.03546666666666" class="ct-bar" ct:value="7234"></line><line x1="56.8" x2="56.8" y1="70" y2="68.74426666666666" class="ct-bar" ct:value="9418"></line><line x1="61.6" x2="61.6" y1="70" y2="68.36706666666667" class="ct-bar" ct:value="12247"></line><line x1="66.4" x2="66.4" y1="70" y2="66.11933333333333" class="ct-bar" ct:value="29105"></line><line x1="71.2" x2="71.2" y1="70" y2="60.9264" class="ct-bar" ct:value="68052"></line><line x1="76" x2="76" y1="70" y2="58.751333333333335" class="ct-bar" ct:value="84365"></line><line x1="80.80000000000001" x2="80.80000000000001" y1="70" y2="56.9532" class="ct-bar" ct:value="97851"></line><line x1="85.6" x2="85.6" y1="70" y2="55.3988" class="ct-bar" ct:value="109509"></line><line x1="90.4" x2="90.4" y1="70" y2="54.49" class="ct-bar" ct:value="116325"></line><line x1="95.2" x2="95.2" y1="70" y2="48.175333333333334" class="ct-bar" ct:value="163685"></line><line x1="100" x2="100" y1="70" y2="46.986266666666666" class="ct-bar" ct:value="172603"></line><line x1="104.80000000000001" x2="104.80000000000001" y1="70" y2="45.82506666666667" class="ct-bar" ct:value="181312"></line><line x1="109.60000000000001" x2="109.60000000000001" y1="70" y2="44.5236" class="ct-bar" ct:value="191073"></line><line x1="114.4" x2="114.4" y1="70" y2="39.80706666666667" class="ct-bar" ct:value="226447"></line><line x1="119.2" x2="119.2" y1="70" y2="39.075199999999995" class="ct-bar" ct:value="231936"></line><line x1="124" x2="124" y1="70" y2="37.96693333333333" class="ct-bar" ct:value="240248"></line><line x1="128.79999999999998" x2="128.79999999999998" y1="70" y2="36.98373333333333" class="ct-bar" ct:value="247622"></line><line x1="133.6" x2="133.6" y1="70" y2="36.6264" class="ct-bar" ct:value="250302"></line><line x1="138.4" x2="138.4" y1="70" y2="36.007866666666665" class="ct-bar" ct:value="254941"></line><line x1="143.20000000000002" x2="143.20000000000002" y1="70" y2="35.443466666666666" class="ct-bar" ct:value="259174"></line><line x1="148" x2="148" y1="70" y2="34.46373333333333" class="ct-bar" ct:value="266522"></line><line x1="152.79999999999998" x2="152.79999999999998" y1="70" y2="28.81706666666667" class="ct-bar" ct:value="308872"></line><line x1="157.6" x2="157.6" y1="70" y2="27.791200000000003" class="ct-bar" ct:value="316566"></line><line x1="162.4" x2="162.4" y1="70" y2="26.837866666666663" class="ct-bar" ct:value="323716"></line><line x1="167.20000000000002" x2="167.20000000000002" y1="70" y2="25.5544" class="ct-bar" ct:value="333342"></line><line x1="172" x2="172" y1="70" y2="24.395066666666665" class="ct-bar" ct:value="342037"></line><line x1="176.8" x2="176.8" y1="70" y2="23.12853333333333" class="ct-bar" ct:value="351536"></line><line x1="181.6" x2="181.6" y1="70" y2="22.151600000000002" class="ct-bar" ct:value="358863"></line><line x1="186.4" x2="186.4" y1="70" y2="20.885466666666666" class="ct-bar" ct:value="368359"></line><line x1="191.2" x2="191.2" y1="70" y2="19.832666666666668" class="ct-bar" ct:value="376255"></line><line x1="196" x2="196" y1="70" y2="18.684933333333333" class="ct-bar" ct:value="384863"></line><line x1="200.8" x2="200.8" y1="70" y2="17.581333333333333" class="ct-bar" ct:value="393140"></line><line x1="205.6" x2="205.6" y1="70" y2="16.71973333333333" class="ct-bar" ct:value="399602"></line><line x1="210.4" x2="210.4" y1="70" y2="15.439599999999999" class="ct-bar" ct:value="409203"></line><line x1="215.2" x2="215.2" y1="70" y2="14.601333333333336" class="ct-bar" ct:value="415490"></line><line x1="220" x2="220" y1="70" y2="13.978000000000002" class="ct-bar" ct:value="420165"></line><line x1="224.8" x2="224.8" y1="70" y2="13.219866666666668" class="ct-bar" ct:value="425851"></line><line x1="229.6" x2="229.6" y1="70" y2="12.420133333333332" class="ct-bar" ct:value="431849"></line><line x1="234.4" x2="234.4" y1="70" y2="11.748133333333335" class="ct-bar" ct:value="436889"></line><line x1="239.2" x2="239.2" y1="70" y2="11.018266666666669" class="ct-bar" ct:value="442363"></line><line x1="244" x2="244" y1="70" y2="9.803333333333335" class="ct-bar" ct:value="451475"></line><line x1="248.8" x2="248.8" y1="70" y2="8.43586666666667" class="ct-bar" ct:value="461731"></line><line x1="253.6" x2="253.6" y1="70" y2="7.475200000000001" class="ct-bar" ct:value="468936"></line><line x1="258.4" x2="258.4" y1="70" y2="6.817599999999999" class="ct-bar" ct:value="473868"></line><line x1="263.19999999999993" x2="263.19999999999993" y1="70" y2="6.092266666666667" class="ct-bar" ct:value="479308"></line><line x1="268" x2="268" y1="70" y2="5.033199999999994" class="ct-bar" ct:value="487251"></line><line x1="272.79999999999995" x2="272.79999999999995" y1="70" y2="4.5615999999999985" class="ct-bar" ct:value="490788"></line><line x1="277.59999999999997" x2="277.59999999999997" y1="70" y2="2.780933333333337" class="ct-bar" ct:value="504143"></line></g></g><g class="ct-labels"></g></svg></div>
+        </div>
+      </div>
+      <ul class="home-story-social socials-2">
+                  <li>
+            <a href="https://www.youtube.com/channel/UCyL0RJe41itDFjd70KKZIZQ" target="blank" tabindex="-1">
+              <img src="./Jumpcut - Captivating Online Courses_files/youtube-circle.svg" alt="youtube">
+              510K
+            </a>
+          </li>
+                  <li>
+            <a href="https://www.instagram.com/christianvui" target="blank" tabindex="-1">
+              <img src="./Jumpcut - Captivating Online Courses_files/instagram-circle.svg" alt="instagram">
+              75K
+            </a>
+          </li>
+              </ul>
+    </div>
+    <!-- .home-story-bottom -->
+  </div>
+  <!-- .home-story-inner -->
+</div><div class="home-story lk on-scroll fade-in-right card-Jahtna slick-slide active" style="background-image: url(/img/jumpcut-homepage/success-students/jahtna.jpg)" data-slick-index="4" aria-hidden="true" tabindex="-1">
+  <div class="home-story-inner">
+    <header class="home-story-header">
+      <h3>
+        Jahtna
+      </h3>
+      <h4>XoJahtna</h4>
+    </header>
+
+    <div class="home-story-bottom">
+      <div class="home-story-read">
+        <p>
+          DIY YouTuber Destroys her Business School Debt With Viral Beauty Hack Videos.
+        </p>
+        <!-- <a class="button small">Read Story</a> -->
+      </div>
+
+      <div class="home-story-stats">
+        <div>
+          <h5>
+            Total: 569K <span class="display-text youtube"></span>
+          </h5>
+          <p class="gain">18K Monthly <span class="display-text youtube"></span></p>
+          <p class="period">
+          Aug 2016 <span class="lucida">-</span> Nov 2018
+          </p>
+        </div>
+        <div class="chart-container">
+          <div class="ct-chart ct-golden-section" id="xoJahtnaData"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-bar" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><line x1="42.4" x2="42.4" y1="70" y2="61.447339130434784" class="ct-bar" ct:value="70254"></line><line x1="47.199999999999996" x2="47.199999999999996" y1="70" y2="59.3628" class="ct-bar" ct:value="87377"></line><line x1="52" x2="52" y1="70" y2="55.56453913043478" class="ct-bar" ct:value="118577"></line><line x1="56.8" x2="56.8" y1="70" y2="51.885095652173916" class="ct-bar" ct:value="148801"></line><line x1="61.6" x2="61.6" y1="70" y2="50.377721739130436" class="ct-bar" ct:value="161183"></line><line x1="66.4" x2="66.4" y1="70" y2="48.85866086956521" class="ct-bar" ct:value="173661"></line><line x1="71.2" x2="71.2" y1="70" y2="47.99808695652174" class="ct-bar" ct:value="180730"></line><line x1="76" x2="76" y1="70" y2="45.158278260869565" class="ct-bar" ct:value="204057"></line><line x1="80.80000000000001" x2="80.80000000000001" y1="70" y2="41.64890434782609" class="ct-bar" ct:value="232884"></line><line x1="85.6" x2="85.6" y1="70" y2="40.782" class="ct-bar" ct:value="240005"></line><line x1="90.4" x2="90.4" y1="70" y2="39.397704347826085" class="ct-bar" ct:value="251376"></line><line x1="95.2" x2="95.2" y1="70" y2="37.66852173913043" class="ct-bar" ct:value="265580"></line><line x1="100" x2="100" y1="70" y2="35.277321739130436" class="ct-bar" ct:value="285222"></line><line x1="104.80000000000001" x2="104.80000000000001" y1="70" y2="34.16255652173913" class="ct-bar" ct:value="294379"></line><line x1="109.60000000000001" x2="109.60000000000001" y1="70" y2="32.837547826086954" class="ct-bar" ct:value="305263"></line><line x1="114.4" x2="114.4" y1="70" y2="32.04551304347826" class="ct-bar" ct:value="311769"></line><line x1="119.2" x2="119.2" y1="70" y2="30.577095652173917" class="ct-bar" ct:value="323831"></line><line x1="124" x2="124" y1="70" y2="27.222573913043476" class="ct-bar" ct:value="351386"></line><line x1="128.79999999999998" x2="128.79999999999998" y1="70" y2="25.908034782608695" class="ct-bar" ct:value="362184"></line><line x1="133.6" x2="133.6" y1="70" y2="24.511686956521736" class="ct-bar" ct:value="373654"></line><line x1="138.4" x2="138.4" y1="70" y2="23.299652173913046" class="ct-bar" ct:value="383610"></line><line x1="143.20000000000002" x2="143.20000000000002" y1="70" y2="22.415704347826086" class="ct-bar" ct:value="390871"></line><line x1="148" x2="148" y1="70" y2="20.536904347826088" class="ct-bar" ct:value="406304"></line><line x1="152.79999999999998" x2="152.79999999999998" y1="70" y2="19.630434782608695" class="ct-bar" ct:value="413750"></line><line x1="157.6" x2="157.6" y1="70" y2="19.044504347826084" class="ct-bar" ct:value="418563"></line><line x1="162.4" x2="162.4" y1="70" y2="18.319182608695655" class="ct-bar" ct:value="424521"></line><line x1="167.20000000000002" x2="167.20000000000002" y1="70" y2="17.771965217391305" class="ct-bar" ct:value="429016"></line><line x1="172" x2="172" y1="70" y2="17.13685217391304" class="ct-bar" ct:value="434233"></line><line x1="176.8" x2="176.8" y1="70" y2="16.576" class="ct-bar" ct:value="438840"></line><line x1="181.6" x2="181.6" y1="70" y2="16.141391304347827" class="ct-bar" ct:value="442410"></line><line x1="186.4" x2="186.4" y1="70" y2="15.802834782608699" class="ct-bar" ct:value="445191"></line><line x1="191.2" x2="191.2" y1="70" y2="11.623165217391303" class="ct-bar" ct:value="479524"></line><line x1="196" x2="196" y1="70" y2="11.056469565217391" class="ct-bar" ct:value="484179"></line><line x1="200.8" x2="200.8" y1="70" y2="10.695878260869563" class="ct-bar" ct:value="487141"></line><line x1="205.6" x2="205.6" y1="70" y2="10.26845217391304" class="ct-bar" ct:value="490652"></line><line x1="210.4" x2="210.4" y1="70" y2="9.902626086956523" class="ct-bar" ct:value="493657"></line><line x1="215.2" x2="215.2" y1="70" y2="9.529252173913044" class="ct-bar" ct:value="496724"></line><line x1="220" x2="220" y1="70" y2="9.115217391304348" class="ct-bar" ct:value="500125"></line><line x1="224.8" x2="224.8" y1="70" y2="8.827304347826086" class="ct-bar" ct:value="502490"></line><line x1="229.6" x2="229.6" y1="70" y2="8.516747826086956" class="ct-bar" ct:value="505041"></line><line x1="234.4" x2="234.4" y1="70" y2="8.203391304347825" class="ct-bar" ct:value="507615"></line><line x1="239.2" x2="239.2" y1="70" y2="7.884678260869563" class="ct-bar" ct:value="510233"></line><line x1="244" x2="244" y1="70" y2="6.627965217391306" class="ct-bar" ct:value="520556"></line><line x1="248.8" x2="248.8" y1="70" y2="4.60173913043478" class="ct-bar" ct:value="537200"></line><line x1="253.6" x2="253.6" y1="70" y2="3.5948347826087" class="ct-bar" ct:value="545471"></line><line x1="258.4" x2="258.4" y1="70" y2="2.7522782608695593" class="ct-bar" ct:value="552392"></line><line x1="263.19999999999993" x2="263.19999999999993" y1="70" y2="2.0621391304347867" class="ct-bar" ct:value="558061"></line><line x1="268" x2="268" y1="70" y2="1.3729739130434808" class="ct-bar" ct:value="563722"></line><line x1="272.79999999999995" x2="272.79999999999995" y1="70" y2="1.0164000000000044" class="ct-bar" ct:value="566651"></line><line x1="277.59999999999997" x2="277.59999999999997" y1="70" y2="0.7608695652173907" class="ct-bar" ct:value="568750"></line></g></g><g class="ct-labels"></g></svg></div>
+        </div>
+      </div>
+      <ul class="home-story-social socials-2">
+                  <li>
+            <a href="https://www.youtube.com/user/xoJahtna" target="blank" tabindex="-1">
+              <img src="./Jumpcut - Captivating Online Courses_files/youtube-circle.svg" alt="youtube">
+              569K
+            </a>
+          </li>
+                  <li>
+            <a href="https://www.instagram.com/xojahtna" target="blank" tabindex="-1">
+              <img src="./Jumpcut - Captivating Online Courses_files/instagram-circle.svg" alt="instagram">
+              17K
+            </a>
+          </li>
+              </ul>
+    </div>
+    <!-- .home-story-bottom -->
+  </div>
+  <!-- .home-story-inner -->
+</div><div class="home-story lk on-scroll fade-in-right card-Olivier slick-slide active" style="background-image: url(/img/jumpcut-homepage/success-students/olivier.jpg)" data-slick-index="5" aria-hidden="true" tabindex="-1">
+  <div class="home-story-inner">
+    <header class="home-story-header">
+      <h3>
+        Olivier
+      </h3>
+      <h4>Gumbino</h4>
+    </header>
+
+    <div class="home-story-bottom">
+      <div class="home-story-read">
+        <p>
+          Viral YouTube Animator With Over 450,000 Subscribers Proves the Doubters Wrong.
+        </p>
+        <!-- <a class="button small">Read Story</a> -->
+      </div>
+
+      <div class="home-story-stats">
+        <div>
+          <h5>
+            Total: 576K <span class="display-text youtube"></span>
+          </h5>
+          <p class="gain">21K Monthly <span class="display-text youtube"></span></p>
+          <p class="period">
+          Jul 2016 <span class="lucida">-</span> Nov 2018
+          </p>
+        </div>
+        <div class="chart-container">
+          <div class="ct-chart ct-golden-section" id="gumbinoData"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-bar" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><line x1="42.4" x2="42.4" y1="70" y2="69.86991666666667" class="ct-bar" ct:value="1115"></line><line x1="47.199999999999996" x2="47.199999999999996" y1="70" y2="69.71533333333333" class="ct-bar" ct:value="2440"></line><line x1="52" x2="52" y1="70" y2="69.6906" class="ct-bar" ct:value="2652"></line><line x1="56.8" x2="56.8" y1="70" y2="69.67053333333334" class="ct-bar" ct:value="2824"></line><line x1="61.6" x2="61.6" y1="70" y2="69.62386666666667" class="ct-bar" ct:value="3224"></line><line x1="66.4" x2="66.4" y1="70" y2="69.35996666666666" class="ct-bar" ct:value="5486"></line><line x1="71.2" x2="71.2" y1="70" y2="69.25671666666666" class="ct-bar" ct:value="6371"></line><line x1="76" x2="76" y1="70" y2="69.21425" class="ct-bar" ct:value="6735"></line><line x1="80.80000000000001" x2="80.80000000000001" y1="70" y2="69.1824" class="ct-bar" ct:value="7008"></line><line x1="85.6" x2="85.6" y1="70" y2="69.02595" class="ct-bar" ct:value="8349"></line><line x1="90.4" x2="90.4" y1="70" y2="68.17918333333333" class="ct-bar" ct:value="15607"></line><line x1="95.2" x2="95.2" y1="70" y2="67.91878333333334" class="ct-bar" ct:value="17839"></line><line x1="100" x2="100" y1="70" y2="67.32063333333333" class="ct-bar" ct:value="22966"></line><line x1="104.80000000000001" x2="104.80000000000001" y1="70" y2="66.2606" class="ct-bar" ct:value="32052"></line><line x1="109.60000000000001" x2="109.60000000000001" y1="70" y2="65.2421" class="ct-bar" ct:value="40782"></line><line x1="114.4" x2="114.4" y1="70" y2="63.375083333333336" class="ct-bar" ct:value="56785"></line><line x1="119.2" x2="119.2" y1="70" y2="62.076116666666664" class="ct-bar" ct:value="67919"></line><line x1="124" x2="124" y1="70" y2="58.453266666666664" class="ct-bar" ct:value="98972"></line><line x1="128.79999999999998" x2="128.79999999999998" y1="70" y2="56.19145" class="ct-bar" ct:value="118359"></line><line x1="133.6" x2="133.6" y1="70" y2="53.326" class="ct-bar" ct:value="142920"></line><line x1="138.4" x2="138.4" y1="70" y2="51.6285" class="ct-bar" ct:value="157470"></line><line x1="143.20000000000002" x2="143.20000000000002" y1="70" y2="49.65846666666667" class="ct-bar" ct:value="174356"></line><line x1="148" x2="148" y1="70" y2="48.121966666666665" class="ct-bar" ct:value="187526"></line><line x1="152.79999999999998" x2="152.79999999999998" y1="70" y2="46.39996666666667" class="ct-bar" ct:value="202286"></line><line x1="157.6" x2="157.6" y1="70" y2="41.5513" class="ct-bar" ct:value="243846"></line><line x1="162.4" x2="162.4" y1="70" y2="34.82745" class="ct-bar" ct:value="301479"></line><line x1="167.20000000000002" x2="167.20000000000002" y1="70" y2="32.6655" class="ct-bar" ct:value="320010"></line><line x1="172" x2="172" y1="70" y2="29.828049999999998" class="ct-bar" ct:value="344331"></line><line x1="176.8" x2="176.8" y1="70" y2="24.28953333333333" class="ct-bar" ct:value="391804"></line><line x1="181.6" x2="181.6" y1="70" y2="23.56223333333333" class="ct-bar" ct:value="398038"></line><line x1="186.4" x2="186.4" y1="70" y2="22.783483333333336" class="ct-bar" ct:value="404713"></line><line x1="191.2" x2="191.2" y1="70" y2="22.17086666666667" class="ct-bar" ct:value="409964"></line><line x1="196" x2="196" y1="70" y2="20.152883333333335" class="ct-bar" ct:value="427261"></line><line x1="200.8" x2="200.8" y1="70" y2="18.874450000000003" class="ct-bar" ct:value="438219"></line><line x1="205.6" x2="205.6" y1="70" y2="18.366483333333335" class="ct-bar" ct:value="442573"></line><line x1="210.4" x2="210.4" y1="70" y2="17.9529" class="ct-bar" ct:value="446118"></line><line x1="215.2" x2="215.2" y1="70" y2="17.50116666666667" class="ct-bar" ct:value="449990"></line><line x1="220" x2="220" y1="70" y2="16.8637" class="ct-bar" ct:value="455454"></line><line x1="224.8" x2="224.8" y1="70" y2="14.33273333333333" class="ct-bar" ct:value="477148"></line><line x1="229.6" x2="229.6" y1="70" y2="12.472949999999997" class="ct-bar" ct:value="493089"></line><line x1="234.4" x2="234.4" y1="70" y2="11.688716666666664" class="ct-bar" ct:value="499811"></line><line x1="239.2" x2="239.2" y1="70" y2="11.056966666666668" class="ct-bar" ct:value="505226"></line><line x1="244" x2="244" y1="70" y2="10.408416666666668" class="ct-bar" ct:value="510785"></line><line x1="248.8" x2="248.8" y1="70" y2="9.034433333333332" class="ct-bar" ct:value="522562"></line><line x1="253.6" x2="253.6" y1="70" y2="8.119883333333334" class="ct-bar" ct:value="530401"></line><line x1="258.4" x2="258.4" y1="70" y2="6.583616666666664" class="ct-bar" ct:value="543569"></line><line x1="263.19999999999993" x2="263.19999999999993" y1="70" y2="5.682950000000005" class="ct-bar" ct:value="551289"></line><line x1="268" x2="268" y1="70" y2="5.284416666666672" class="ct-bar" ct:value="554705"></line><line x1="272.79999999999995" x2="272.79999999999995" y1="70" y2="4.7109999999999985" class="ct-bar" ct:value="559620"></line><line x1="277.59999999999997" x2="277.59999999999997" y1="70" y2="2.8382666666666694" class="ct-bar" ct:value="575672"></line></g></g><g class="ct-labels"></g></svg></div>
+        </div>
+      </div>
+      <ul class="home-story-social socials-2">
+                  <li>
+            <a href="https://www.youtube.com/channel/UCdpfQWie2gS-DdZLvrcQL6Q" target="blank" tabindex="-1">
+              <img src="./Jumpcut - Captivating Online Courses_files/youtube-circle.svg" alt="youtube">
+              576K
+            </a>
+          </li>
+                  <li>
+            <a href="https://www.facebook.com/GumbinoGaming" target="blank" tabindex="-1">
+              <img src="./Jumpcut - Captivating Online Courses_files/facebook-circle.svg" alt="facebook">
+              42K
+            </a>
+          </li>
+              </ul>
+    </div>
+    <!-- .home-story-bottom -->
+  </div>
+  <!-- .home-story-inner -->
+</div></div></div>
+        
+        
+        
+        
+        
+      </div>
+      <!-- .home-stories -->
+
+      <footer class="footer">
+        <div class="col logo-col">
+          <img src="./Jumpcut - Captivating Online Courses_files/logo.svg">
+        </div>
+
+        <div class="col company-col">
+          <h2>Company</h2>
+          <ul class="footer-links">
+            <li><a id="reviews-anchor-bottom" href="https://jumpcut.com/reviews">Reviews</a></li>
+            <li><a id="about-anchor-bottom" href="https://jumpcut.com/about">Company</a></li>
+            <li><a id="login-anchor-bottom" href="https://app.jumpcut.com/login">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col courses-col">
+          <h2>Courses</h2>
+          <ul class="footer-links">
+            <li>
+              <a id="view-course-va-bottom" href="https://jumpcut.com/viral-academy">
+                <span class="icon">
+                  <img src="./Jumpcut - Captivating Online Courses_files/va-icon-footer.svg">
+                </span>
+                Viral Academy
+              </a>
+            </li>
+            <li>
+              <a id="view-course-aim-bottom" href="https://jumpcut.com/automated-income-machine">
+                <span class="icon">
+                  <img src="./Jumpcut - Captivating Online Courses_files/aim-icon-footer.svg">
+                </span>
+                Automated Income Machine
+              </a>
+            </li>
+            <!-- <li>
+              <a id="view-course-aots-bottom" href="/art-of-the-startup">
+                <span class="icon">
+                  <img src="/img/jumpcut-homepage/as-icon-footer.svg" />
+                </span>
+                Art of the startup
+              </a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="col social-col">
+          <ul class="footer-social">
+            <li>
+              <a href="https://www.youtube.com/channel/UChRuEomNTRpeWMIrAn03dGg"><img src="./Jumpcut - Captivating Online Courses_files/youtube.svg"></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/jumpcuthq"><img src="./Jumpcut - Captivating Online Courses_files/facebook.svg"></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- .width -->
+  </div>
+  <!-- .home-dark -->
+
+  <div class="page-bottom">
+    <img class="rocket" src="./Jumpcut - Captivating Online Courses_files/rocket.png">
+    <img class="background" src="./Jumpcut - Captivating Online Courses_files/page-bottom.png">
+  </div>
+
+  <div class="overlay"></div>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1941349982570823');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1"
+      src="https://www.facebook.com/tr?id=1941349982570823&ev=PageView
+      &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- linkedin Pixel Code -->
+    <script type="text/javascript">
+      _linkedin_partner_id = "434058";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+      </script><script type="text/javascript">
+      (function(){var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript";b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);})();
+    </script>
+    <!-- Amplitude -->
+    <script type="text/javascript">
+      (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script");r.type="text/javascript";r.async=true;r.src="https://cdn.amplitude.com/libs/amplitude-4.2.1-min.gz.js";r.onload=function(){if(e.amplitude.runQueuedFunctions){e.amplitude.runQueuedFunctions()}else{console.log("[Amplitude] Error: could not load SDK")}};var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i);function s(e,t){e.prototype[t]=function(){this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}var o=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset"];for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[];return this};var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"];for(var p=0;p<l.length;p++){s(c,l[p])}n.Revenue=c;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"];function v(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){e=(!e||e.length===0?"$default_instance":e).toLowerCase();if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]};e.amplitude=n})(window,document);
+      
+      window.amplitude = amplitude.getInstance();
+      window.amplitude.init('dc966a5ac3f3c6da1cb5516d64c3091c', null, { platform: 'Apex' });
+    </script>
+    <!-- End Amplitude -->
+    <!-- Campaign Logger -->
+    <script type="text/javascript" src="./Jumpcut - Captivating Online Courses_files/CampaignLogger.js.download"></script>
+    <script type="text/javascript">
+      window.addEventListener('load', function () {
+        window.CampaignLogger.init('https://core.jumpcut.com');
+      });
+    </script>
+    <!-- End Campaign Logger -->
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=434058&fmt=gif
+      https://dc.ads.linkedin.com/collect/?pid=434058&fmt=gif
+      " />
+    </noscript>
+    <!-- End linkedin Pixel Code -->
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"07aab54604","applicationID":"114141288","transactionName":"MwdbYkNYC0oEBkILWQpNeFVFUApXSg==","queueTime":0,"applicationTime":227,"atts":"H0BYFAtCGEQ=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+    <script src="./Jumpcut - Captivating Online Courses_files/jquery-3.3.1.min.js.download"></script>
+  <script src="./Jumpcut - Captivating Online Courses_files/chartist.min.js.download"></script>
+  <script type="text/javascript" src="./Jumpcut - Captivating Online Courses_files/paroller.min.js.download"></script>
+  <script type="text/javascript" src="./Jumpcut - Captivating Online Courses_files/slick.min.js.download"></script>
+  <script type="text/javascript" src="./Jumpcut - Captivating Online Courses_files/animations.js.download"></script>
+  <script type="text/javascript" src="./Jumpcut - Captivating Online Courses_files/header.js.download"></script>
+  <script type="text/javascript" src="./Jumpcut - Captivating Online Courses_files/make.js.download"></script>
+  <script type="text/javascript" src="./Jumpcut - Captivating Online Courses_files/stories.js.download"></script>
+  <script type="text/javascript" src="./Jumpcut - Captivating Online Courses_files/chart.js.download"></script>
+  <script type="text/javascript">
+    if (window.amplitude) {
+      window.amplitude.logEvent('Homepage View');
+
+      var startTime = Date.now();
+
+      function createButtonEvent (button) {
+        if (!button.element) {
+          return;
+        }
+
+        button.element.addEventListener('click', function () {
+          var timeToClick = (Date.now() - startTime) / 1000;
+          window.amplitude.logEvent('Homepage, ' + button.title, {
+            'Time to Click (Seconds)': timeToClick,
+          });
+        });
+      }
+
+      var buttons = [
+        {
+          title: 'Get Started',
+          element: document.getElementById('get-course-started'),
+        },
+        {
+          title: 'View Course - VA (Main)',
+          element: document.getElementById('view-course-va'),
+        },
+        {
+          title: 'View Course - AIM (Main)',
+          element: document.getElementById('view-course-aim'),
+        },
+        {
+          title: 'View Course - AotS (Main)',
+          element: document.getElementById('view-course-aots'),
+        },
+        {
+          title: 'View Course - VA (Bottom)',
+          element: document.getElementById('view-course-va-bottom'),
+        },
+        {
+          title: 'View Course - AIM (Bottom)',
+          element: document.getElementById('view-course-aim-bottom'),
+        },
+        {
+          title: 'View Course - AotS (Bottom)',
+          element: document.getElementById('view-course-aots-bottom'),
+        },
+        {
+          title: 'View Course - VA (Sidebar)',
+          element: document.getElementById('view-course-va-sidebar'),
+        },
+        {
+          title: 'View Course - AIM (Sidebar)',
+          element: document.getElementById('view-course-aim-sidebar'),
+        },
+        {
+          title: 'View Course - AotS (Sidebar)',
+          element: document.getElementById('view-course-aots-sidebar'),
+        },
+        {
+          title: 'Login',
+          element: document.getElementById('login-anchor'),
+        },
+        {
+          title: 'View Reviews',
+          element: document.getElementById('reviews-anchor'),
+        },
+        {
+          title: 'View Blog',
+          element: document.getElementById('blog-anchor'),
+        },
+        {
+          title: 'View Company',
+          element: document.getElementById('company-anchor')
+        },
+        {
+          title: 'Login (Bottom)',
+          element: document.getElementById('login-anchor-bottom'),
+        },
+        {
+          title: 'View Reviews (Bottom)',
+          element: document.getElementById('reviews-anchor-bottom'),
+        },
+        {
+          title: 'View Blog (Bottom)',
+          element: document.getElementById('blog-anchor-bottom'),
+        },
+        {
+          title: 'View Company (Bottom)',
+          element: document.getElementById('company-anchor-bottom'),
+        }
+      ];
+
+      for (var i = 0; i < buttons.length; i++) {
+        createButtonEvent(buttons[i]);
+      }
+    }
+  </script>
+
+
+<script src="./Jumpcut - Captivating Online Courses_files/saved_resource" type="text/javascript"></script></body></html>
