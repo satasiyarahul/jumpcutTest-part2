@@ -162,7 +162,7 @@ footer{background: #161616;padding: 1.25rem;color:rgba(255,255,255,0.5);font-siz
 	.menuToggleMobile span{width:1.8rem;height: 0.25rem;background: #fff;display: inline-block;float: left;border-radius: 0.25rem;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
 	.menuToggleMobile span.second{margin: 0.33rem 0;}
 	.navwrap {float: left;display: block;position: fixed;width:18.75rem;max-width: 25rem;min-width: 17rem;height: calc(100% - 4.36rem);background: #171717;z-index: 999;left: 0;top: 4.36rem;overflow: hidden;width: 0;-webkit-transform: skew(10deg);-ms-transform: skew(10deg);-o-transform: skew(10deg);transform: skew(10deg);-webkit-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;opacity:0;left: -25rem;}
-	.navwrap.nav-open{display: block;-webkit-transform: skew(0deg);-ms-transform: skew(0deg);-o-transform: skew(0deg);transform: skew(0deg);width: 70%;opacity: 1;left: 0;}
+	.navwrap.nav-open{display: block;-webkit-transform: skew(0deg);-ms-transform: skew(0deg);-o-transform: skew(0deg);transform: skew(0deg);width: 70%;opacity: 1;left: 0;overflow: auto;}
 	.nav-open .first{width: 1.4rem;}
 	.nav-open .first{width: 1rem;}
 	.nav-open .third{width: 1.6rem;}
